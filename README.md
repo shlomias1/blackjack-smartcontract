@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Blackjack Smart Contract
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub repo size](https://img.shields.io/github/repo-size/shlomias1/blackjack-smartcontract)
+![GitHub contributors](https://img.shields.io/github/contributors/shlomias1/blackjack-smartcontract)
+![GitHub stars](https://img.shields.io/github/stars/shlomias1/blackjack-smartcontract?style=social)
+![GitHub forks](https://img.shields.io/github/forks/shlomias1/blackjack-smartcontract?style=social)
 
-## Available Scripts
+Welcome to the Blackjack Smart Contract project! This repository contains the implementation of a smart contract version of the popular Blackjack card game. The goal of this project is to demonstrate how a traditional card game can be implemented on the blockchain, ensuring transparency, fairness, and security.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [About the Project](#about-the-project)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Smart Contract Details](#smart-contract-details)
+  - [Contract Architecture](#contract-architecture)
+  - [Key Features](#key-features)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This project is an Ethereum-based smart contract for a game of Blackjack. The contract handles all the game logic, including shuffling cards, dealing hands, and determining the outcome of each round. Players interact with the contract through transactions, placing bets and receiving payouts based on the results of their games.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get a local copy up and running, follow these simple steps.
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before you begin, ensure you have the following tools installed on your system:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (v6 or higher)
+- [Truffle](https://www.trufflesuite.com/truffle)
+- [Ganache](https://www.trufflesuite.com/ganache)
+- [MetaMask](https://metamask.io/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```sh
+   git clone https://github.com/shlomias1/blackjack-smartcontract.git
+   cd blackjack-smartcontract
+## Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Compile the smart contract
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+truffle compile
 
-## Learn More
+## Deploy the smart contract to a local development network
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+truffle migrate
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Usage
+Run a local blockchain using Ganache.
+Deploy the contract to the local blockchain.
+Interact with the contract using a web3-enabled browser extension like MetaMask.
+Smart Contract Details
+Contract Architecture
+The smart contract is designed to handle the core mechanics of the Blackjack game. It is divided into several components:
 
-### Code Splitting
+Card Handling: The contract ensures fair shuffling and dealing of cards.
+Betting Mechanism: Players can place bets, which are locked until the game resolves.
+Game Logic: The contract enforces Blackjack rules, such as hitting, standing, and determining the winner.
+Payout: Based on the game outcome, the contract automatically transfers the appropriate amount of tokens to the winner.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Key Features
+Fairness: The contract uses cryptographic techniques to ensure the fairness of card shuffling.
+Transparency: All actions are recorded on the blockchain, making the game outcomes fully transparent.
+Security: The contract is designed with security in mind, preventing common vulnerabilities like re-entrancy attacks.
 
-### Analyzing the Bundle Size
+#### Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run the tests, use the following command
 
-### Making a Progressive Web App
+truffle test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This will execute all the unit tests to ensure the smart contract behaves as expected.
 
-### Advanced Configuration
+Contributing
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Fork the Project.
+Create your Feature Branch (git checkout -b feature/AmazingFeature).
+Commit your Changes (git commit -m 'Add some AmazingFeature').
+Push to the Branch (git push origin feature/AmazingFeature).
+Open a Pull Request.
+License
+Distributed under the MIT License. See LICENSE.txt for more information.
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+Shlomi - shlomiasi1@gmail.com
