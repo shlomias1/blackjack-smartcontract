@@ -47,19 +47,20 @@ Before you begin, ensure you have the following tools installed on your system:
    ```sh
    git clone https://github.com/shlomias1/blackjack-smartcontract.git
    cd blackjack-smartcontract
-## Install dependencies
+### Install dependencies
 
 npm install
 
-## Compile the smart contract
+### Compile the smart contract
 
 truffle compile
 
-## Deploy the smart contract to a local development network
+### Deploy the smart contract to a local development network
 
 truffle migrate
 
-#### Usage
+### Usage
+
 Run a local blockchain using Ganache.
 Deploy the contract to the local blockchain.
 Interact with the contract using a web3-enabled browser extension like MetaMask.
@@ -72,12 +73,13 @@ Betting Mechanism: Players can place bets, which are locked until the game resol
 Game Logic: The contract enforces Blackjack rules, such as hitting, standing, and determining the winner.
 Payout: Based on the game outcome, the contract automatically transfers the appropriate amount of tokens to the winner.
 
-#### Key Features
+### Key Features
+
 Fairness: The contract uses cryptographic techniques to ensure the fairness of card shuffling.
 Transparency: All actions are recorded on the blockchain, making the game outcomes fully transparent.
 Security: The contract is designed with security in mind, preventing common vulnerabilities like re-entrancy attacks.
 
-#### Testing
+### Testing
 
 To run the tests, use the following command
 
@@ -85,7 +87,8 @@ truffle test
 
 This will execute all the unit tests to ensure the smart contract behaves as expected.
 
-Contributing
+### Contributing
+
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 Fork the Project.
@@ -93,8 +96,10 @@ Create your Feature Branch (git checkout -b feature/AmazingFeature).
 Commit your Changes (git commit -m 'Add some AmazingFeature').
 Push to the Branch (git push origin feature/AmazingFeature).
 Open a Pull Request.
-License
+
+### License
+
 Distributed under the MIT License. See LICENSE.txt for more information.
 
-Contact
+**Contact**
 Shlomi - shlomiasi1@gmail.com
