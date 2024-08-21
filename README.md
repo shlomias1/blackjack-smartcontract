@@ -50,14 +50,17 @@ Before you begin, ensure you have the following tools installed on your system:
 
 ### Install dependencies
 
+   ```sh
    npm install
 
 ### Compile the smart contract
 
+   ```sh
    truffle compile
 
 ### Deploy the smart contract to a local development network
 
+   ```sh
    truffle migrate
 
 ### Usage
