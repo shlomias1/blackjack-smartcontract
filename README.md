@@ -49,15 +49,18 @@ Before you begin, ensure you have the following tools installed on your system:
    cd blackjack-smartcontract
 ### Install dependencies
 
-npm install
+  ```sh
+  npm install
 
 ### Compile the smart contract
 
-truffle compile
+  ```sh
+  truffle compile
 
 ### Deploy the smart contract to a local development network
 
-truffle migrate
+  ```sh
+  truffle migrate
 
 ### Usage
 
