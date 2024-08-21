@@ -47,6 +47,7 @@ Before you begin, ensure you have the following tools installed on your system:
    ```sh
    git clone https://github.com/shlomias1/blackjack-smartcontract.git
    cd blackjack-smartcontract
+
 ### Install dependencies
 
    ```sh
