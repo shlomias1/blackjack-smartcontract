@@ -44,21 +44,28 @@ Before you begin, ensure you have the following tools installed on your system:
 
 1. Clone the repository:
 
-   ```sh
+   ...
    git clone https://github.com/shlomias1/blackjack-smartcontract.git
    cd blackjack-smartcontract
+   ...
 
 ### Install dependencies
 
+   ...
    npm install
+   ...
 
 ### Compile the smart contract
 
+   ...
    truffle compile
+   ...
 
 ### Deploy the smart contract to a local development network
 
+   ...
    truffle migrate
+   ...
 
 ### Usage
 
