@@ -42,7 +42,7 @@ Before you begin, ensure you have the following tools installed on your system:
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
 
    ```
